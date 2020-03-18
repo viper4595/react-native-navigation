@@ -1,3 +1,5 @@
+import android.support.annotation.Nullable;
+
 package com.reactnativenavigation.viewcontrollers.bottomtabs;
 
 import android.support.annotation.VisibleForTesting;
@@ -12,7 +14,7 @@ import java.util.List;
 public class BottomTabsAttacher {
     private final List<ViewController> tabs;
     private final BottomTabsPresenter presenter;
-    @VisibleForTesting
+    // @VisibleForTesting
     AttachMode attachStrategy;
 
     public BottomTabsAttacher(List<ViewController> tabs, BottomTabsPresenter presenter) {
