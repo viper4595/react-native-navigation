@@ -1,6 +1,6 @@
 package com.reactnativenavigation.viewcontrollers.bottomtabs;
 
-import android.support.annotation.*;
+import androidx.annotation.Nullable;
 import android.view.*;
 import android.widget.*;
 
@@ -51,7 +51,7 @@ public abstract class AttachMode {
 
     }
 
-    @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)
+    // @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)
     public void attach(ViewController tab) {
         ViewGroup view = tab.getView();
         view.setLayoutParams(new RelativeLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT));
